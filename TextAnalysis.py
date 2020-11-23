@@ -1,6 +1,6 @@
 """
 
-This applications(more specifically, this tool-kits) purpose is:
+This applications(more specifically, this tool-kit) purpose is:
 
     1. consolidation of certain natural language analytics libraries
 
