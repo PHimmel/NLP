@@ -116,7 +116,7 @@ TODO make sure that various input types are compatible
 """
 
 
-class TextProcessing(object):
+class TextProcessing:
 
     def __init__(self, text):
         self.text = text
