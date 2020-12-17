@@ -127,9 +127,6 @@ class TextProcessing:
     def __str__(self):
         return 'An object for manipulating text.'
 
-    def __sub__(self):
-        pass
-
     def freq_dist(self):
         return nltk.FreqDist(self.text)
 
@@ -506,44 +503,3 @@ class StringManipulation(object):
     def string_translation_removal(self):
         pass
 
-
-def main():
-
-    indeed_file = ExtractTextFromFile(ExtractTextFromFile.indeed_posts)#, to_remove=ExtractTextFromFile.newline_removal)
-    removed_control = indeed_file.open_file_read_data_remove_garbage()
-    filtered_indeed = PrintInterface(removed_control)
-    filtered_indeed.print_text()
-    print(indeed_file.remove_trash_from_string())
-
-
-def type_testing():
-    test = ['sddsdsSDDEdds dsdDDsd dsdsWDSWd.', 'sdFDsdd']
-    # test = 'ssdsd'
-    test_obj = TextInterface(test, lower=True)
-    print(test_obj.get_words())
-    print(test_obj.get_sentences())
-    print(test_obj.get_text())
-    print('\n')
-    test_obj = TextInterface(test, lower=False)
-    print(test_obj.get_words())
-    print(test_obj.get_sentences())
-    print(test_obj.get_text())
-    #  additional = Text.lowercase(test)
-    # print(additional.text)
-    print('\n')
-    print_test = PrintInterface(test, lower=True)
-    print_test.print_words()
-    print_test.print_text()
-    print_test.print_sentences()
-    print_test.print_sentence_freq_dist()
-    print_test.print_word_freq_dist()
-
-    print(print_test)
-
-
-if __name__ == '__main__':
-    print('Main\n')
-    # main()
-    print('\nTermination')
-else:
-    print('Imported')
