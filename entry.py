@@ -1,3 +1,5 @@
+from TextAnalysis.TextAnalysis import *
+
 def main():
 
     indeed_file = ExtractTextFromFile(ExtractTextFromFile.indeed_posts)#, to_remove=ExtractTextFromFile.newline_removal)

@@ -1,0 +1,5 @@
+.Python
+.idea/
+bin/
+lib/
+pyvenv.cfg
